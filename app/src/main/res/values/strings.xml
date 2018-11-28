@@ -9,7 +9,7 @@
     <string name="search_new_activity">Search</string>
     <string name="departure">Departure</string>
     <string name="destination">Destination</string>
-    <string name="result">resultat</string>
+    <string name="result">result</string>
     <string name="error">Please fill your departure and destination.</string>
     <string name="extrames">fr.wildcodeschool.blablawild.MESSAGE</string>
 

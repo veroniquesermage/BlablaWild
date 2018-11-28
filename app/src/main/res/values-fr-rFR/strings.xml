@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BlaBlaWild</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="SearchButton">Chercher un itinéraire</string>
+    <string name="search_title">Recherche</string>
+    <string name="depart_text">Départ</string>
+    <string name="desti_text">Destination</string>
+    <string name="date">Date</string>
+    <string name="search_new_activity">Recherche</string>
+    <string name="departure">Départ</string>
+    <string name="destination">Destination</string>
+    <string name="result">Résultat</string>
+    <string name="error">Veuillez remplir votre départ et votre destination.</string>
+    <string name="extrames">fr.wildcodeschool.blablawild.MESSAGE</string>
+</resources>
