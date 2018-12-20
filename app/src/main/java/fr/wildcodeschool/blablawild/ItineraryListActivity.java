@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -17,10 +18,11 @@ public class ItineraryListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_itinerary_list);
 
-        Intent intentThree = getIntent();
-        String message = intentThree.getStringExtra(getString(R.string.extrames));
+        SearchModel intent = getIntent().getParcelableExtra("bobby");
 
-        setTitle(message);
+        setTitle(intent.getDeparture()+">>"+intent.getDestination());
+        Toast.makeText(this,intent.getDate(),Toast.LENGTH_SHORT).show();
+
 
         ListView listTrip = findViewById(R.id.list_trip);
         ArrayList<TripModel> results = new ArrayList<>();

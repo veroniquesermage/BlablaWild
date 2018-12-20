@@ -78,17 +78,20 @@ public class ItinerarySearchActivity extends AppCompatActivity {
 
             Intent intentSearch = new Intent(this, ItineraryListActivity.class);
 
-            EditText editText = (EditText) findViewById(R.id.editText);
-            EditText editText2 = (EditText) findViewById(R.id.editText2);
-            String message = editText.getText().toString() + " >> " + editText2.getText().toString();
-            intentSearch.putExtra(getString(R.string.extrames), message);
+            EditText editText = findViewById(R.id.editText);
+            EditText editText2 = findViewById(R.id.editText2);
+            EditText editText3 = findViewById(R.id.date);
+
+            SearchModel bobby = new SearchModel(editText.getText().toString(),editText2.getText().toString(),editText3.getText().toString());
+            intentSearch.putExtra("bobby", bobby);
+//
 
             startActivity(intentSearch);
         }
     }
 
     private void updateLabel(Calendar myCalendar, EditText dateText) {
-        String myFormat = "MM/dd/yy"; //In which you need put here
+        String myFormat = "dd/MM/yyyy"; //In which you need put here
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
         dateText.setText(sdf.format(myCalendar.getTime()));
